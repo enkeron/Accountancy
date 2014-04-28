@@ -1,0 +1,26 @@
+PROCEDURE mainMenu
+
+ DEFINE MENU mmymenu BAR IN f_result
+ DEFINE PAD mpfile OF mmymenu PROMPT "Файл" COLOR SCHEME 3
+ DEFINE PAD mpdocs OF mmymenu PROMPT "Редактирование" COLOR SCHEME 3
+ 
+  ON PAD mpfile OF mmymenu ACTIVATE POPUP "файл"
+
+  DEFINE POPUP "файл" SHADOW MARGIN RELATIVE COLOR SCHEME 4
+ DEFINE BAR 1 OF "файл" PROMPT "\-" 
+ DEFINE BAR 2 OF "файл" PROMPT "Выход"
+  
+ 
+
+ DEFINE POPUP "Редактирование" SHADOW MARGIN RELATIVE COLOR SCHEME 4
+ DEFINE BAR 1 OF "Редактирование" PROMPT "Начало" 
+ DEFINE BAR 2 OF "Редактирование" PROMPT "Оборот" 
+ DEFINE BAR 3 OF "Редактирование" PROMPT "\-"
+ 
+ ON SELECTION BAR 1 OF "Редактирование" DO form f_beg name f_beg linked
+ ON SELECTION BAR 2 OF "Редактирование" DO form f_oborot name f_oborot linked
+ 
+
+ ACTIVATE MENU mmymenu NOWAIT
+ENDPROC
+

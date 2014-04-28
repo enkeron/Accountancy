@@ -1,0 +1,25 @@
+Screen=off
+Title=Buh_obl
+CATMAN=OFF
+century = on
+codepage = Auto
+COLLATE = Rusian
+
+DECIMALS=8
+default=C:\Users\iBoz\Documents\Visual FoxPro Projects\buh_obl\
+date = german
+delete = on
+exclusive = off
+hour=24
+
+path=data;progs;forms;graphics;reports;menu;icons
+
+talk = off
+
+tmpfiles=c:\temp\
+editwork=c:\temp\
+progwork=c:\temp\
+sortwork=c:\temp\
+*resource=off
+*help=off
+
